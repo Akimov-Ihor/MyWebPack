@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf)
+}
+
+@import 'variables';
+
+html {
+  font-size: $root-font-size;
+  font-family: $font-family;
+  max-width: $page-width;
+  max-height: $page-height;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  font-size: $paragraph-font-size;
+}
+body{
+  width: 100%;
+  height: 800px;
+}
+
+@mixin flex () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box {
+  @mixin flex(){}
+   width: 100px;
+   height: 100px;
+  background-color: black;
+}
